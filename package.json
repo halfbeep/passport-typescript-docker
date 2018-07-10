@@ -1,9 +1,10 @@
 {
-  "name": "@risingstack/rest-api-typescript",
+  "name": "express-typescript-docker",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "docker build . && heroku container:login && heroku container:push web && heroku container:release web",
     "build": "tsc",
     "dev": "tsc --watch & nodemon dist",
     "test": "tsc && mocha dist/**/*.spec.js",
@@ -11,12 +12,18 @@
     "tsc": "tsc"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Shaun Cains",
+  "contributors": "@risingstack node",
+  "license": "MIT",
   "dependencies": {
     "@types/node": "7.0.22",
-    "express": "4.15.3",
-    "nodemon": "1.11.0"
+    "axios": "^0.18.0",
+    "express": "^4.15.3",
+    "express-session": "^1.15.6",
+    "nodemon": "1.11.0",
+    "passport": "^0.4.0",
+    "passport-instagram": "^1.0.0",
+    "pug": "^2.0.3"
   },
   "devDependencies": {
     "@types/mocha": "2.2.41",
