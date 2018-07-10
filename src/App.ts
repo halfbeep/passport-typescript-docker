@@ -77,7 +77,7 @@ class App {
         psprt.use(new InstagramStrategy({
             clientID: "e33a936b699b4ffbb1226f0429acefd4",
             clientSecret: "f2ae2a598eff4a09ba3c5c672e4fefb8",
-            callbackURL: "http://born.network:3000/auth/instagram/callback"
+            callbackURL: "https://bornista.herokuapp.com/auth/instagram/callback"
         }, (accessToken, refreshToken, profile, done) => {
 
             let user = <User>{};
