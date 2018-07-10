@@ -1,25 +1,29 @@
-## Skeleton for Node.js applications written in TypeScript
+## Boiler for Node.js applications written in TypeScript
 
 ### Development
 
 ```bash
-npm run dev
+yarn deploy (docker container via heroku)
+```
+
+```bash
+yarn dev
 ```
 
 ### Running tests
 
 ```bash
-npm test
+yarn test (failsafe test)
 ```
 
 ### Linting
 
 ```bash
-npm run lint
+yarn lint
 ```
 
 ### Building a container
 
 ```bash
-docker build .
+docker build .   (also included in deploy to heroku)
 ```
