@@ -1,4 +1,4 @@
-## Boiler for Node.js applications written in TypeScript
+## Boilerplate for Node.js applications written in TypeScript
 
 ### Development
 
